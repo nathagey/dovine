@@ -3,10 +3,9 @@ seed based app for growing grape vines
 m/v/c
 
 1. app/v/do 
-  1.1 post "seed" to c/do
+  1.1 post "seed" to app/c/newSeed
+	- app/v/do?vine=seed
 	
-2. app/c/do
+2. app/c/newSeed
 	2.1	app/m/plantSeed
-	2.2 app/m/growVine
-	
-3. app/v/do?vine=seed
+	2.2 app/m/getVine
